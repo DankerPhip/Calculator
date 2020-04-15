@@ -98,11 +98,7 @@ const operator = document.querySelectorAll(".operator");
 operator.forEach(operator => operator.addEventListener("click", function (e){
     let firstInput = document.getElementById("first-num");
     let sign = operator.getAttribute("id");
-    if(firstInput.innerHTML = "0"){
-        equation.num1 = 0;
-    } else {
-        equation.num1 = parseInt(firstInput.innerHTML); //converts string into numbers
-    }
+    equation.num1 = parseInt(firstInput.innerHTML); //converts string into numbers
     if(equation.num2 == "" && equation.num1 != ""){
         if(sign == "add"){
             document.getElementById("sign").innerHTML = " + ";
