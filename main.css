@@ -1,0 +1,159 @@
+main{
+    display: flex;
+    justify-content: center;
+}
+#case{
+    background-color: #BBB;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+    margin: 100px;
+    padding: 5px 0px 0px 0px;
+    height: 392px;
+    width: 310px; 
+    font-family: helvetica; 
+    box-shadow: 1px 1px 1px 2px rgba(60, 60,60, 0.6);
+}
+
+#display{
+    display: flex;
+    flex-direction: column;
+    background-color: #EEE;
+    margin-bottom: 13px;
+    border-radius: 5px;
+    height: 78px;
+    width: 292px;
+    box-shadow: -1px -1px 1px rgba(60, 60,60, 0.6);
+}
+
+#past-input-div{
+    display: flex;
+    align-items: center;
+    height: 25px;
+    width: 260px;
+    position: relative;
+    top: 6px;
+    left: 13px;
+    font-size: 18px;
+    overflow: scroll;
+    color: rgba(0,0,0,0.75);
+}
+
+#current-input-div{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 35px;
+    width: 260px;
+    position: relative;
+    top: 11px;
+    left: 20px;
+    font-size: 22px;
+    overflow: scroll;
+}
+
+#keys{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 290px;
+    width: 310px;
+}
+
+button{
+    background-color: #EEE;
+    border: solid;
+    border-color: #AAA;
+    border-width: 1px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px rgba(30, 30,30, 0.6);
+    margin: 5px 2px 5px 2px;
+    height: 40px;
+    width: 68px;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    transition: all .04s;
+    outline: none;
+}   
+
+#back-arrow{
+    height: 20px;
+    width: 37%;
+}
+
+#div-icon{
+    height: 22px;
+    width: 35%;
+}
+
+#expo-base{
+    position: relative;
+    left: 3px;
+}
+
+h4{
+    font-size: 13px;
+    position: relative;
+    left: 3px;
+    bottom: 7px;
+}
+
+#subtract{
+    font-size: 26px;
+}
+
+#point{
+    font-size: 25px;
+    position: relative;
+    bottom: 2px;
+}
+
+#positive{
+    font-size: 15px;
+    position: relative;
+    bottom: 3px;
+}
+
+#over{
+    position: relative;
+    top: 1px;
+    font-size: 20px;
+}
+
+#negative{
+    position: relative;
+    top: 2px;
+    font-size: 24px;
+}
+
+#divide, #multiply, #add, #subtract{
+    background-color: rgb(113, 194, 241);
+    border-color: rgb(47, 72, 126);
+    box-shadow: 1px 1px 1px rgba(30, 30,30, 0.85);
+}
+
+#clear{
+    background-color: rgba(233, 128, 128, 0.9);
+    border-color: rgba(131, 62, 62, 0.9);
+    box-shadow: 1px 1px 1px rgba(30, 30,30, 0.85);
+}
+
+button:hover{
+    background-color: #CCC;
+}
+
+#divide:hover, #multiply:hover, #add:hover, #subtract:hover{
+    background-color: rgb(103, 178, 221);
+}
+
+#clear:hover{
+    background-color:rgba(192, 107, 107, 0.9);
+}
+
+.clicking{
+    transform: scale(0.9);
+}
